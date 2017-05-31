@@ -46,6 +46,8 @@
 
 	'use strict';
 
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 	/**
 	 * Created by chintan on 5/25/17.
 	 */
@@ -64,11 +66,23 @@
 	var React = __webpack_require__(1); // residing inside node_modules (installed using npm)
 	var ReactDOM = __webpack_require__(158); // residing inside node_modules (installed using npm)
 
+	// Testing ES6
+	var objOne = {
+	    name: 'Chintan',
+	    location: 'Boston'
+	};
+
+	var objTwo = _extends({
+	    age: 25
+	}, objOne);
+
+	console.log(objTwo
+
 	// for manipulating DOM (Processes JSX returned by <Intro> component which is then converted by Babel to ES5)
-	ReactDOM.render(React.createElement(
-	  'h1',
-	  null,
-	  'Boilerplate App!'
+	);ReactDOM.render(React.createElement(
+	    'h1',
+	    null,
+	    'Boilerplate App!'
 	), document.getElementById("app"));
 
 /***/ }),
