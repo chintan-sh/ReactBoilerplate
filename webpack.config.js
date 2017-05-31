@@ -20,7 +20,7 @@ module.exports = {
     loaders :[{
         loader : 'babel-loader', // used for translating to es2015
         query : {
-          presets : ['react', 'es2015'] // tells babel-loader to take our files & parse thru reactjs and then translate to es2015
+          presets : ['react', 'es2015', 'stage-0'] // tells babel-loader to take our files & parse thru reactjs and then translate to es2015
         },
         test: /\.jsx?$/, // which file to target for conversion to es2015 (not same as resolve above)
         exclude : /(node_modules|bower_components|archives)/ // folders that we don't wanna parse
